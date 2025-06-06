@@ -1,4 +1,4 @@
-FROM jekyll/jekyll:4.4.1
+FROM jekyll/jekyll:latest
 COPY . /srv/website
 WORKDIR /srv/website
 EXPOSE 4000
