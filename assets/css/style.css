@@ -86,6 +86,10 @@ blockquote p {
   font-size: 15px;
 }
 
+.site-content {
+  min-height: calc(100vh - 5rem);
+}
+
 .logo {
   margin-top: 0;
   margin-bottom: 2rem;
@@ -109,12 +113,19 @@ blockquote p {
   display: none;
 }
 
+.footer {
+  font-size: 15px;
+  color: #555;
+}
+
 @media (max-width: 640px) {
+  .footer .left {
+    display: none;
+  }
   .menu {
     margin-bottom: 2rem;
     display: none;
   }
-
   .menu ul li a {
     display: block;
     border-bottom-style: none;
@@ -122,13 +133,19 @@ blockquote p {
 }
 
 @media (min-width: 640px) {
-  .container {
+  .footer .left {
+    display: block;
+  }
+  .container,
+  .footer {
     display: flex;
     column-gap: 4rem;
   }
-  .menu {
+  .menu,
+  .left {
     display: block;
     text-align: right;
+    width: 80px;
   }
   .logo {
     margin-top: 1rem;
@@ -136,6 +153,7 @@ blockquote p {
   }
   .content {
     margin-bottom: 4rem;
+    width: 100%;
   }
   .hamburger {
     display: none;
