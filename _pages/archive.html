@@ -4,6 +4,10 @@ layout: page
 permalink: "/archive.html"
 ---
 
+<h1 style="margin-bottom: 1.5rem">
+  <i class="fa-solid fa-box-archive"></i> Site Archive
+</h1>
+
 {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date |
 date: '%Y %B'" %} {% for yearMonth in postsByYearMonth %}
 <h2>{{ yearMonth.name }}</h2>
