@@ -1,0 +1,13 @@
+<div class="content">
+  <h1>
+    {% if post.link %}
+    <a href="{{post.link}}" target="_blank">{{ post.title }}</a>
+    <a href="{{site.baseurl}}{{post.url}}" class="title-link"
+      ><i class="fa-solid fa-bolt"></i
+    ></a>
+    {% else %}
+    <a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
+    {% endif %}
+  </h1>
+  <article>{{ post.content}}</article>
+</div>
