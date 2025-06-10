@@ -5,10 +5,12 @@
       >{{ post.title }}</a
     >
     <a href="{{site.baseurl}}{{post.url}}" class="border-none"
-      ><i class="ri-verified-badge-line text-lg"></i
+      ><i class="ri-hashtag"></i
     ></a>
     {% else %}
-    <a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
+    <a href="{{site.baseurl}}{{post.url}}" class="border-none"
+      >{{ post.title }}</a
+    >
     {% endif %}
   </h1>
   <article>{{ post.content}}</article>
