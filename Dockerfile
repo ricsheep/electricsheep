@@ -1,7 +1,7 @@
 FROM ruby:3.3.6
 
 RUN apt update
-RUN apt install -y node npm
+RUN apt install -y nodejs npm
 
 COPY . /app
 WORKDIR /app
