@@ -1,5 +1,7 @@
 FROM ruby:3.3.6
 
+EXPOSE 8124
+
 RUN apt update
 RUN apt install -y nodejs npm
 
