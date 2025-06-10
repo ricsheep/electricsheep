@@ -14,4 +14,4 @@ RUN chmod a+w Gemfile.lock
 RUN bundle install
 
 RUN mkdir _site .jekyll-cache
-RUN jekyll build
+RUN bundle exec jekyll build
