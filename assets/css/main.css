@@ -32,6 +32,10 @@ article p {
   margin-bottom: 1rem;
 }
 
+h1 {
+  color: #333;
+}
+
 .pagination {
   display: flex;
   padding-left: 0;
