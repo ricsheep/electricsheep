@@ -17,22 +17,17 @@
       href="{{site.baseurl}}/{{site.favicon}}"
     />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- Remix Fonts -->
+    <link href="{{site.baseurl}}/assets/fonts/remixicon.css" rel="stylesheet" />
 
     <!-- Site Stylesheet -->
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css" />
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css" />
   </head>
 
   <body>
     <!-- Content -->
-    <main role="main" class="site-content">{{ content }}</main>
-    {% include footer.html %}
+    <main role="main" class="px-4 max-w-2xl mx-auto">
+      {{ content }}{% include footer.html %}
+    </main>
   </body>
 </html>

@@ -4,21 +4,21 @@ layout: page
 permalink: "/archive.html"
 ---
 
-<h1 style="margin-bottom: 1.5rem">
-  <i class="fa-solid fa-box-archive"></i> Site Archive
+<h1
+  class="font-bold text-lg sm:text-2xl mb-4 text-neutral-700 border-b-2 border-[#d4d2ae] w-fit px-1"
+>
+  Archive
 </h1>
 
 {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date |
 date: '%Y %B'" %} {% for yearMonth in postsByYearMonth %}
-<h2>{{ yearMonth.name }}</h2>
+<h2 class="font-semibold text-lg">{{ yearMonth.name }}</h2>
 <!-- Display the year and month -->
-<ul>
+<div class="grid grid-cols-2">
   {% for post in yearMonth.items %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a
-    ><date style="margin-left: 1rem">{{ post.date | date: '%b %d, %Y' }}</date>
-  </li>
+  <a href="{{ post.url }}" class="w-fit">{{ post.title }}</a
+  ><date style="margin-left: 1rem">{{ post.date | date: '%b %d, %Y' }}</date>
   <!-- Link to the post -->
   {% endfor %}
-</ul>
+</div>
 {% endfor %}

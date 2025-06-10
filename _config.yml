@@ -11,9 +11,13 @@ permalink: /:title/
 # Plugins
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-postcss
   - jekyll-seo-tag
+  - jekyll-sitemap
+
+postcss:
+  cache: false
 
 # Defaults
 defaults:

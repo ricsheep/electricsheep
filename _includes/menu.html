@@ -1,0 +1,44 @@
+<div class="mb-8 sm:mb-10">
+  <ul class="flex justify-evenly">
+    <li
+      class="text-center {% if page.url == '/' %}border-b-2 border-[#d4d2ae]{% endif %}"
+    >
+      <a
+        class="block hover:bg-[#d4d2ae] p-4 border-none"
+        href="{{ site.baseurl }}/"
+        ><i class="ri-home-8-line text-lg sm:text-2xl"></i
+        ><span class="block">Home</span></a
+      >
+    </li>
+    <li
+      class="text-center {% if page.url == '/archive.html' %}border-b-2 border-[#d4d2ae]{% endif %}"
+    >
+      <a
+        class="block hover:bg-[#d4d2ae] p-4 border-none"
+        href="{{ site.baseurl }}/archive.html"
+        ><i class="ri-archive-2-line text-lg sm:text-2xl"></i
+        ><span class="block">Archive</span></a
+      >
+    </li>
+    <li
+      class="text-center {% if page.url == '/about.html' %}border-b-2 border-[#d4d2ae]{% endif %}"
+    >
+      <a
+        class="block hover:bg-[#d4d2ae] p-4 border-none"
+        href="{{ site.baseurl }}/about.html"
+        ><i class="ri-file-list-3-line text-lg sm:text-2xl"></i
+        ><span class="block">About</span></a
+      >
+    </li>
+    <li
+      class="text-center {% if page.url == '/contact.html' %}border-b-2 border-[#d4d2ae]{% endif %}"
+    >
+      <a
+        class="block hover:bg-[#d4d2ae] p-4 border-none"
+        href="{{ site.baseurl }}/contact.html"
+        ><i class="ri-service-bell-line text-lg sm:text-2xl"></i
+        ><span class="block">Contact</span></a
+      >
+    </li>
+  </ul>
+</div>

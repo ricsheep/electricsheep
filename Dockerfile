@@ -1,6 +1,12 @@
 FROM ruby:3.3.6
+
+RUN apt update
+RUN apt install -y node npm
+
 COPY . /app
 WORKDIR /app
+
+RUN npm install
 
 RUN gem install jekyll
 RUN touch Gemfile.lock
