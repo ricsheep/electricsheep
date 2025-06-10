@@ -28,6 +28,10 @@ a:hover {
   background: #fefdd0;
 }
 
+article p {
+  margin-bottom: 1rem;
+}
+
 .pagination {
   display: flex;
   padding-left: 0;

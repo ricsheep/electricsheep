@@ -14,11 +14,9 @@ permalink: "/archive.html"
 date: '%Y %B'" %} {% for yearMonth in postsByYearMonth %}
 <h2 class="font-semibold text-lg">{{ yearMonth.name }}</h2>
 <!-- Display the year and month -->
-<div class="grid grid-cols-2">
-  {% for post in yearMonth.items %}
+{% for post in yearMonth.items %}
+<div>
   <a href="{{ post.url }}" class="w-fit">{{ post.title }}</a
   ><date style="margin-left: 1rem">{{ post.date | date: '%b %d, %Y' }}</date>
-  <!-- Link to the post -->
-  {% endfor %}
 </div>
-{% endfor %}
+{% endfor %} {% endfor %}

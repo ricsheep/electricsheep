@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "efeb18ba2b06746a",
+        "id": "88a76b75b0f748f2",
         "type": "tabs",
         "children": [
           {
-            "id": "76a5ffb8ed90fdf7",
+            "id": "d5c4d96b86126b64",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "2025-06-10-apple-gives-developers-access-to-on-device-ai-models.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2025-06-10-apple-gives-developers-access-to-on-device-ai-models"
             }
           }
         ]
@@ -162,8 +166,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "76a5ffb8ed90fdf7",
+  "active": "3151405c16b930ee",
   "lastOpenFiles": [
+    "2025-06-10-apple-gives-developers-access-to-on-device-ai-models.md",
     "2025-06-05-how-to-encrypt-your-iphone.md",
     "2025-06-05-trump-family-crypto-projects.md",
     "2025-06-09-wwdc-2024-announcements.md",
