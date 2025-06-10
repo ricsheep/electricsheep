@@ -1,7 +1,5 @@
 FROM ruby:3.3.6
 
-EXPOSE 8124
-
 RUN apt update
 RUN apt install -y nodejs npm
 
@@ -16,4 +14,4 @@ RUN chmod a+w Gemfile.lock
 RUN bundle install
 
 RUN mkdir _site .jekyll-cache
-RUN bundle exec jekyll build
+RUN JEKYLL_ENV=production bundle exec jekyll build
