@@ -24,10 +24,8 @@
   <body>
     <!-- Content -->
     <main role="main">
-      <div style="display: flex; gap: 0 2rem; justify-items: center">
-        {% include logo.html %} {% include menu.html %}
-      </div>
-      {{ content }}{% include footer.html %}
+      {% include menu.html %} {% include logo.html %} {{ content }}{% include
+      footer.html %}
     </main>
   </body>
 </html>
