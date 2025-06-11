@@ -4,15 +4,18 @@ layout: page
 permalink: "/archive.html"
 ---
 
-<div style="margin-top: 1rem">
-  {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date |
-  date: '%Y %B'" %} {% for yearMonth in postsByYearMonth %}
-  <h1>{{ yearMonth.name }}</h1>
-  {% for post in yearMonth.items %}
-  <div style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis">
-    <span style="font-weight: bold">&middot;</span>
-    <span>{{- post.date | date: '%b %d, %Y' -}}</span>
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-  </div>
-  {% endfor %} {% endfor %}
+<h1
+  class="font-bold text-lg mb-8 text-neutral-700 border-b-2 border-[#d4d2ae] w-fit px-1"
+>
+  Archive
+</h1>
+
+{% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date |
+date: '%Y %B'" %} {% for yearMonth in postsByYearMonth %}
+<h2 class="font-semibold mb-4">{{ yearMonth.name }}</h2>
+<!-- Display the year and month -->
+{% for post in yearMonth.items %}
+<div class="mt-2">
+  <span class="font-bold mr-2">&middot;</span
+  ><a href="{{ post.url }}" class="w-fit">{{ post.title }}</a>
 </div>
