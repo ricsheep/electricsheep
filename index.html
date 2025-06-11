@@ -1,61 +1,18 @@
 ---
 title: "Electric Sheep"
 layout: page
-pagination:
-  enabled: true
 description: "A blog about technology, privacy, and freedom"
 ---
 
-<div class="max-w-xl mx-auto">
-  {% for post in paginator.posts %}{% include main-loop-card.html %}{% endfor %}
-
-  <div>
-    <!-- Pagination links -->
-    {% if paginator.total_pages > 1 %}
-    <ul class="pagination">
-      {% if paginator.previous_page %}
-      <li class="page-item">
-        <a
-          class="page-link"
-          href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
-          >&laquo; Prev</a
-        >
-      </li>
-      {% else %}
-      <li class="page-item disabled">
-        <span class="prev page-link">&laquo;</span>
-      </li>
-      {% endif %} {% for page in (1..paginator.total_pages) %} {% if page ==
-      paginator.page %}
-      <li class="page-item disabled">
-        <span class="webjeda page-link">{{ page }}</span>
-      </li>
-      {% elsif page == 1 %}
-      <li class="page-item">
-        <a class="page-link" href="{{site.baseurl}}/">{{ page }}</a>
-      </li>
-      {% else %}
-      <li class="page-item">
-        <a
-          class="page-link"
-          href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}"
-          >{{ page }}</a
-        >
-      </li>
-      {% endif %} {% endfor %} {% if paginator.next_page %}
-      <li class="page-item">
-        <a
-          class="page-link"
-          href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"
-          >Next &raquo;</a
-        >
-      </li>
-      {% else %}
-      <li class="page-item disabled">
-        <span class="next page-link">&raquo;</span>
-      </li>
-      {% endif %}
-    </ul>
-    {% endif %}
+<div style="margin-top: 1rem">
+  {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date |
+  date: '%Y %B'" %} {% for yearMonth in postsByYearMonth %}
+  <!-- <h1>{{ yearMonth.name }}</h1> -->
+  {% for post in yearMonth.items %}
+  <div style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis">
+    <span style="font-weight: bold">&middot;</span>
+    <span>{{- post.date | date: '%b %d, %Y' -}}</span>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
   </div>
+  {% endfor %} {% endfor %}
 </div>

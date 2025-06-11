@@ -17,16 +17,16 @@
       href="{{site.baseurl}}/{{site.favicon}}"
     />
 
-    <!-- Remix Fonts -->
-    <link href="{{site.baseurl}}/assets/fonts/remixicon.css" rel="stylesheet" />
-
     <!-- Site Stylesheet -->
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css" />
   </head>
 
   <body>
     <!-- Content -->
-    <main role="main" class="px-4 max-w-2xl mx-auto">
+    <main role="main">
+      <div style="display: flex; gap: 0 2rem; justify-items: center">
+        {% include logo.html %} {% include menu.html %}
+      </div>
       {{ content }}{% include footer.html %}
     </main>
   </body>

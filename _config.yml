@@ -11,13 +11,8 @@ permalink: /:title/
 # Plugins
 plugins:
   - jekyll-feed
-  - jekyll-paginate
-  - jekyll-postcss
   - jekyll-seo-tag
   - jekyll-sitemap
-
-postcss:
-  cache: false
 
 # Defaults
 defaults:
@@ -36,9 +31,6 @@ defaults:
 # Syntax
 markdown: kramdown
 highlighter: rouge
-
-# Paginate
-paginate: 10
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
 exclude:
