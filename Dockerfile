@@ -3,8 +3,6 @@ FROM ruby:3.3.6
 COPY . /app
 WORKDIR /app
 
-RUN npm install
-
 RUN gem install jekyll
 RUN touch Gemfile.lock
 RUN chmod a+w Gemfile.lock
