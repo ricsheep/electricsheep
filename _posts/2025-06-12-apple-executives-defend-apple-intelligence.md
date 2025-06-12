@@ -2,6 +2,7 @@
 layout: post
 title: Apple Executives Defend Apple Intelligence, Siri and AI Strategy
 link: https://www.wsj.com/tech/ai/apple-intelligence-ai-strategy-siri-627ce650?mod=tech_lead_pos5
+date: 2025-06-12 12:00
 ---
 Joanna Stern sat down and interviewed Craig Federighi and Greg Joswiak.
 

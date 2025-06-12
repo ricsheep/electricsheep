@@ -2,6 +2,7 @@
 layout: post
 link: https://www.acquired.fm/episodes/the-steve-ballmer-interview
 title: The Steve Balmer Interview
+date: 2025-06-12 11:30
 ---
 Steve Balmer appeared on the acquired podcast recently...
 
