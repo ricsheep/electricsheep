@@ -1,6 +1,7 @@
 ---
 layout: post
 link: https://www.acquired.fm/episodes/the-steve-ballmer-interview
+title: The Steve Balmer Interview
 ---
 Steve Balmer appeared on the acquired podcast recently...
 

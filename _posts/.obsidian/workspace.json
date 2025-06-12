@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b0fd485955c69b65",
+        "id": "e7d53abbe3169e32",
         "type": "tabs",
         "children": [
           {
-            "id": "f328dc6ed2c95f81",
+            "id": "87e41fa70d9a83a9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025-06-12-the-steve-balmer-interview.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2025-06-12-the-steve-balmer-interview"
+              "title": "New tab"
             }
           }
         ]
@@ -166,8 +162,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3151405c16b930ee",
+  "active": "87e41fa70d9a83a9",
   "lastOpenFiles": [
+    "2025-06-12-apple-executives-defend-apple-intelligence.md",
     "2025-06-12-the-steve-balmer-interview.md",
     "2025-06-10-apples-f1-opening-to-wwdc.md",
     "2025-06-10-apple-gives-developers-access-to-on-device-ai-models.md",
