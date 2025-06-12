@@ -11,10 +11,14 @@
             "id": "f328dc6ed2c95f81",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "2025-06-12-the-steve-balmer-interview.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2025-06-12-the-steve-balmer-interview"
             }
           }
         ]
@@ -162,8 +166,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f328dc6ed2c95f81",
+  "active": "3151405c16b930ee",
   "lastOpenFiles": [
+    "2025-06-12-the-steve-balmer-interview.md",
     "2025-06-10-apples-f1-opening-to-wwdc.md",
     "2025-06-10-apple-gives-developers-access-to-on-device-ai-models.md",
     "2025-06-05-how-to-encrypt-your-iphone.md",
