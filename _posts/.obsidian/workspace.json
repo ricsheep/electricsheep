@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e7d53abbe3169e32",
+        "id": "9f41887b9313f368",
         "type": "tabs",
         "children": [
           {
-            "id": "87e41fa70d9a83a9",
+            "id": "d3fddd38feb5d0de",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -162,7 +162,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "87e41fa70d9a83a9",
+  "active": "d3fddd38feb5d0de",
   "lastOpenFiles": [
     "2025-06-12-apple-executives-defend-apple-intelligence.md",
     "2025-06-12-the-steve-balmer-interview.md",
